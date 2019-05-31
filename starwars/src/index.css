@@ -1,7 +1,23 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-image: url('./sw-bg.jpg');
+}
+body {
+  background: url('./sw-bg.jpg') no-repeat fixed center;
   background-size: cover;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+html *,
+html *:before,
+html *:after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poller One', cursive;
 }

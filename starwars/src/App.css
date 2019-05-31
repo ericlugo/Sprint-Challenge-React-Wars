@@ -4,5 +4,30 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin: 1rem;
 }
-/* write your parent styles in here for your App.js */
+.list-container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem 1rem;
+  place-items: stretch stretch;
+}
+
+@media (min-width: 500px) {
+  .list-container {
+    margin: 1rem 3rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .list-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
